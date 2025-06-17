@@ -1,0 +1,222 @@
+body{
+margin: 0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #f4f4f4;
+color: #333333e9;
+}
+header{
+    background-color: #1e90ff;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+section{
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+h1,h2{
+    margin-top: 0;
+}
+.tecnologias, .proyectos, .Redes{
+    background: white;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.572);
+    margin-bottom: 30px;
+}
+.redes{
+    padding-left: 20px;
+    display: flex;
+    gap: 2rem; /* Espacio entre los ítems */
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+.redes li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input, textarea, button{
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+}
+.btnw .icon {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    vertical-align: middle;
+   padding: 20px 210px 20px 30px;
+   
+    transition: .3s all ease;
+  }
+  .btnw .icon:hover {
+    left: 120px;
+    top: -5px;
+    vertical-align: middle;
+    transform: scale(1.5);
+  }
+  .btnG .icon {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    vertical-align: middle;
+   padding: 20px 210px 20px 30px;
+   
+    transition: .3s all ease;
+  }
+  .btnG .icon:hover {
+    left: 105px;
+    top: -5px;
+    vertical-align: middle;
+    transform: scale(1.5);
+  }
+.btn {
+   padding: 12px 26px;
+   background: transparent;
+   cursor: pointer;
+   transition: all .3s ease;
+   position: relative;
+   color: #22d3ee;
+   border: 1px solid #22d3ee;
+   box-shadow: 0 0 5px #22d3ee, 0 0 5px #22d3ee;
+   z-index: 1;
+}
+.btn::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: #06b6d4;
+    box-shadow: 0 0 20px #06b6d4;
+    transition: .3s all ease;
+}
+.btn:hover{
+    color: #fff;
+}
+.btn:hover:after{
+    left: 0;
+    width: 100%;
+}
+.btn:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+    0 0 2.5em 2em var(--glow-spread-color),
+    inset 0 0 .5em .25em var(--glow-color);
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #eee;
+    font-size: 0.9rem;
+}
+
+.btnw{
+    cursor: pointer;
+    --glow-color: rgb(60, 255, 150);              /* Verde menta brillante */
+    --glow-spread-color: rgba(80, 255, 170, 0.6); /* Más difuso y vivo */
+    --enhanced-glow-color: rgb(100, 255, 180);    /* Suave y vibrante */
+    --btn-color: rgb(30, 160, 90);                /* Verde esmeralda más profundo */
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 25px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 
+    0 0 0.5em .15em var(--glow-color),
+        0 0 1.5em 0.5em var(--glow-spread-color),
+        inset 0 0 0.4em .15em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+    color: white;
+}
+.btnw::after{
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+.btnw:hover {
+    color: transparent;
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+    0 0 4em 2em var(--glow-spread-color),
+    inset 0 0 .75em .25em var(--glow-color);
+}
+.btnw:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+    0 0 2.5em 2em var(--glow-spread-color),
+    inset 0 0 .5em .25em var(--glow-color);
+}
+
+.btnG{
+    cursor: pointer;
+    --glow-color: rgb(180, 180, 180);            /* Gris claro para el brillo principal */
+--glow-spread-color: rgba(150, 150, 150, 0.5); /* Gris medio difuminado */
+--enhanced-glow-color: rgb(200, 200, 200);    /* Gris muy claro para destacar */
+--btn-color: rgb(60, 60, 60);                 /* Gris oscuro para el fondo del botón */
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 25px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 
+    0 0 0.5em .15em var(--glow-color),
+        0 0 1.5em 0.5em var(--glow-spread-color),
+        inset 0 0 0.4em .15em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+    color: white;
+}
+.btnG::after{
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+.btnG:hover {
+    color: transparent;
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+    0 0 4em 2em var(--glow-spread-color),
+    inset 0 0 .75em .25em var(--glow-color);
+}
+.btnG:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+    0 0 2.5em 2em var(--glow-spread-color),
+    inset 0 0 .5em .25em var(--glow-color);
+}
